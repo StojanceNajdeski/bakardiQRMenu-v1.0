@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 
 const NotAuthorized = () => (
   <div className="flex flex-col items-center justify-center h-screen text-center">
@@ -19,7 +18,6 @@ const NotAuthorized = () => (
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const [isAuthorized, setIsAuthorized] = useState<null | boolean>(null);
-  const router = useRouter();
 
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("bakardiAdminLoggedIn");

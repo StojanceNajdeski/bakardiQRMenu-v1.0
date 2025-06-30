@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import i18n from "../../../i18n";
 import { useTranslation } from "react-i18next";
 const Furnarinki = () => {
   const { t } = useTranslation();

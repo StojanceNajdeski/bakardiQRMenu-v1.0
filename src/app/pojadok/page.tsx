@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import React, { useTransition } from "react";
 import "../../../i18n";
 import { useTranslation } from "react-i18next";
 

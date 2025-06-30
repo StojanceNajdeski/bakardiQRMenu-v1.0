@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import React, { useTransition } from "react";
 import { useTranslation } from "react-i18next";
 
 const Pojadok = () => {
