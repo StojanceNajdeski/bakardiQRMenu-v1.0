@@ -35,56 +35,56 @@ const MenuComponent = () => {
           onClick={() => i18n.changeLanguage("al")}
         />
       </div>
-      <h1 className="text-center py-4 text-3xl">{t("bakardiMeni")}</h1>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <h1 className="text-center py-4 text-4xl">{t("bakardiMeni")}</h1>
+      <button className="bg-red-400 text-white text-2xl p-3 w-60 mb-5 rounded-2xl">
         <Link href="/specijaliteti">{t("specijaliteti")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white text-2xl p-3 w-60 mb-5 rounded-2xl">
         <Link href="/novo">{t("novo")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/pojadok">{t("pojadok")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/dodatoci">{t("dodatoci")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/panceroti">{t("panceroti")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="furnarinki">{t("furnarinki")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="meze">{t("meze")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="sirenje">{t("sirenje")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/salati">{t("salati")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/pasta">{t("pasta")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/pici">{t("pici")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/rolsendvici">{t("rolSendvici")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/burgeri">{t("burgeri")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/sendvici">{t("sendvici")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/daski">{t("daski")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/pastrmajlija">{t("pastrmajlija")}</Link>
       </button>
-      <button className="bg-red-400 text-white p-3 w-50 mb-5 rounded-2xl">
+      <button className="bg-red-400 text-white p-3 text-2xl w-60 mb-5 rounded-2xl">
         <Link href="/deserti">{t("deserti")}</Link>
       </button>
     </div>
