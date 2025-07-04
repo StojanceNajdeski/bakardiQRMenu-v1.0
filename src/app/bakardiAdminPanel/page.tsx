@@ -4,13 +4,10 @@ import { useRouter } from "next/navigation";
 import "../../../i18n";
 import { useTranslation } from "react-i18next";
 import ProtectedRoute from "../ProtectedRoute";
+import { signOut } from "next-auth/react";
 
 export default function BakardiAdminPanel() {
   const router = useRouter();
-  const handleLogout = () => {
-    localStorage.removeItem("bakardiAdminLoggedIn");
-    router.push("/bakardiAdminLogin");
-  };
   const { t } = useTranslation();
 
   return (
@@ -19,7 +16,7 @@ export default function BakardiAdminPanel() {
         <div className="flex justify-center items-center">
           <button
             className="bg-red-600 text-white py-2 px-5 rounded-md"
-            onClick={handleLogout}
+            onClick={() => signOut({ callbackUrl: "/bakardiAdminLogin" })}
           >
             Одјави се
           </button>

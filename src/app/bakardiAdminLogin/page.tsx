@@ -1,10 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 import React, { useState } from "react";
-
-const USERNAME = "bakardiAdmin";
-const PASSWORD = "bakardiAdmin";
 
 export default function BakardiAdminLogin() {
   const router = useRouter();
@@ -12,14 +10,19 @@ export default function BakardiAdminLogin() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (username === USERNAME && password === PASSWORD) {
-      localStorage.setItem("bakardiAdminLoggedIn", "true");
-      router.push("/bakardiAdminPanel");
-    } else {
+    const res = await signIn("credentials", {
+      redirect: false,
+      username,
+      password,
+    });
+
+    if (res?.error) {
       setError("Грешно корисничко име или пасворд");
+    } else if (res?.ok) {
+      router.push("/bakardiAdminPanel");
     }
   };
 

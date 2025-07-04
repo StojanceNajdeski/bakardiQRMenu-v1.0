@@ -1,6 +1,6 @@
 const al = {
   // Menu component
-  bakardiMeni: "Bacardi Menyja",
+  bakardiMeni: "Bacardi - Menyja",
   specijaliteti: "Specialitete",
   novo: "E re",
   pojadok: "Mëngjes",

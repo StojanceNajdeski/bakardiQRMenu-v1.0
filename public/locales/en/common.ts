@@ -1,6 +1,7 @@
 const en = {
+  mkd: "MKD",
   // Menu component
-  bakardiMeni: "Bacardi Menu",
+  bakardiMeni: "Bacardi - Menu",
   specijaliteti: "Specialties",
   novo: "New",
   pojadok: "Breakfast",

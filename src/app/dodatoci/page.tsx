@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
 const Dodatoci = () => {
@@ -8,7 +10,7 @@ const Dodatoci = () => {
   return (
     <div className="text-base sm:text-lg md:text-xl lg:text-2xl">
       <Link href="/">
-        <p className="text-4xl pl-2">🡐</p>
+        <FontAwesomeIcon icon={faAngleLeft} size="2x" className="pt-3 pl-3" />
       </Link>
       <div className="justify-center items-center flex flex-col">
         <h1 className="text-center text-3xl ">{t("bakardiMeni")}</h1>
@@ -20,85 +22,99 @@ const Dodatoci = () => {
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("bakardiSos")}</b>
-            <b className="basis-1/12">50</b>
+            <b className="basis-1/12 text-right">50</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("ladenKariSos")}</b>
-            <b className="basis-1/12">50</b>
+            <b className="basis-1/12 text-right">50</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("kecapMajonez100")}</b>
-            <b className="basis-1/12">50</b>
+            <b className="basis-1/12 text-right">50</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("kecapMajonez")}</b>
-            <b className="basis-1/12">30</b>
+            <b className="basis-1/12 text-right">30</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("meksikanaSos")}</b>
-            <b className="basis-1/12">50</b>
+            <b className="basis-1/12 text-right">50</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("jajce")}</b>
-            <b className="basis-1/12">40</b>
+            <b className="basis-1/12 text-right">40</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("varivoBrokula")}</b>
-            <b className="basis-1/12">70</b>
+            <b className="basis-1/12 text-right">70</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("pavlaka")}</b>
-            <b className="basis-1/12">40</b>
+            <b className="basis-1/12 text-right">40</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("maslinki")}</b>
-            <b className="basis-1/12">70</b>
+            <b className="basis-1/12 text-right">70</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("kajmak")}</b>
-            <b className="basis-1/12">60</b>
+            <b className="basis-1/12 text-right">60</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("pomfrit")}</b>
-            <b className="basis-1/12">60</b>
+            <b className="basis-1/12 text-right">60</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("sirenjeDodatok")}</b>
-            <b className="basis-1/12">60</b>
+            <b className="basis-1/12 text-right">60</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("piperka")}</b>
-            <b className="basis-1/12">40</b>
+            <b className="basis-1/12 text-right">40</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12">{t("jogurt")}</b>
-            <b className="basis-1/12">60</b>
+            <b className="basis-1/12 text-right">60</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
         </div>
       </div>

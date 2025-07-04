@@ -1,12 +1,6 @@
 import { drizzle } from "drizzle-orm/node-postgres";
-import pkg from "pg";
+import pg from "pg";
 import * as schema from "./schema";
 
-const { Pool } = pkg;
-
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-});
-
+const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL });
 export const db = drizzle(pool, { schema });
-export type { InferModel } from "drizzle-orm";

@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
 const Pasta = () => {
@@ -8,7 +10,7 @@ const Pasta = () => {
   return (
     <div className="text-base sm:text-lg md:text-xl lg:text-2xl">
       <Link href="/">
-        <p className="text-4xl pl-2">🡐</p>
+        <FontAwesomeIcon icon={faAngleLeft} size="2x" className="pt-3 pl-3" />
       </Link>
       <div className="justify-center items-center flex flex-col">
         <h1 className="text-center text-3xl">{t("bakardiMeni")}</h1>
@@ -21,44 +23,62 @@ const Pasta = () => {
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12 uppercase">{t("italijana")}</b>
-            <b className="basis-1/12">220</b>
+            <b className="basis-1/12 text-right">220</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
-          <small>{t("italijanaDesc")}</small>
+          <div className="flex">
+            <small className="basis-3/4">{t("italijanaDesc")}</small>
+          </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12 uppercase">{t("bolonjeze")}</b>
-            <b className="basis-1/12">220</b>
+            <b className="basis-1/12 text-right">220</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
-          <small>{t("bolonjezeDesc")}</small>
+          <div className="flex">
+            <small className="basis-3/4">{t("bolonjezeDesc")}</small>
+          </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12 uppercase">{t("fungiVoBelSos")}</b>
-            <b className="basis-1/12">220</b>
+            <b className="basis-1/12 text-right">220</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
-          <small>{t("fungiVoBelSosDesc")}</small>
+          <div className="flex">
+            <small className="basis-3/4">{t("fungiVoBelSosDesc")}</small>
+          </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12 uppercase">{t("stekPecurki")}</b>
-            <b className="basis-1/12">250</b>
+            <b className="basis-1/12 text-right">250</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
-          <small>{t("stekPecurkiDesc")}</small>
+          <div className="flex">
+            <small className="basis-3/4">{t("stekPecurkiDesc")}</small>
+          </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12 uppercase">{t("karbonara")}</b>
-            <b className="basis-1/12">280</b>
+            <b className="basis-1/12 text-right">280</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
-          <small>{t("karbonaraDesc")}</small>
+          <div className="flex">
+            <small className="basis-3/4">{t("karbonaraDesc")}</small>
+          </div>
         </div>
         <div className="pb-5">
           <div className="flex">
             <b className="basis-11/12 uppercase">{t("vegetarijana")}</b>
-            <b className="basis-1/12">220</b>
+            <b className="basis-1/12 text-right">220</b>
+            <b className="ml-1">{t("mkd")}</b>
           </div>
-          <small>{t("vegetarijanaDesc")}</small>
+          <div className="flex">
+            <small className="basis-3/4">{t("vegetarijanaDesc")}</small>
+          </div>
         </div>
       </div>
     </div>
