@@ -1,5 +1,5 @@
 const mk = {
-  mkd: "Ден",
+  mkd: "ден",
   // Menu component
   bakardiMeni: "Бакарди - Мени",
   specijaliteti: "Специјалитети",
